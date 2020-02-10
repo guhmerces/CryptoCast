@@ -27,12 +27,18 @@ Serve the application.
 
     $ php artisan serve
 
-+++++++++++++++++++++++++++
+
+
+
+Screenshot 1
 
 ![applicationSS1 ](screenshots/screenshot02.png)
 
 
 
-+++++++++++++++++++++++++++
+
+
+
+Screenshot 2
 
 ![applicationSS2 ](screenshots/screenshot01.png)
