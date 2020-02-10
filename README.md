@@ -19,6 +19,10 @@ Populating the database.
 
     $ php artisan db:seed
 
+Create simlink for storage's public disk.
+
+    $ php artisan storage:link
+
 Serve the application.
 
     $ php artisan serve
