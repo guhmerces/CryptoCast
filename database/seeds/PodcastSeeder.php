@@ -12,7 +12,13 @@ class PodcastSeeder extends Seeder
     public function run()
     {
         
+        $user = factory(App\User::class)->create([
+            'email' => 'visitante@email.com',
+            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+        ]);
+        
         $podcast = factory(App\Podcast::class)->states('published')->create([
+            'user_id' => $user->id,
             'title' => 'The Bitcoin Podcast Network',
             'description' => 'The Bitcoin Podcast Network is a collection of long form conversation format podcasts on bitcoin, blockchain, ethereum and everything in between. Shows include The Bitcoin Podcast, Announcements, On-Ramping with Dee,',
             'website' => 'https://thebitcoinpodcast.com/',
