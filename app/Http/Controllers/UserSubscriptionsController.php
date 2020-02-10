@@ -19,7 +19,7 @@ class UserSubscriptionsController extends Controller
         return view('user-subscriptions.index', ['podcasts' => $podcasts] );
     }    
 
-    public function __contruct()
+    public function __construct()
     {
         $this->middleware('auth');
     }
